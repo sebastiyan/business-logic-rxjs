@@ -1,11 +1,12 @@
-import testReducer, { testEpic } from './test'
+import testReducer, { firstNameFieldEpic, submitTestFormEpic } from './test'
 
 const reducers = {
   test: testReducer,
 }
 
 const epics = [
-  testEpic,
+  firstNameFieldEpic,
+  submitTestFormEpic,
 ]
 
 export {

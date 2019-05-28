@@ -8,12 +8,10 @@ import { connect } from 'react-redux'
 // import { connectResource, connectFormResource } from 'common/utils/resource'
 import Test from './Test'
 
-
 class TestContainer extends Component {
   @autobind
   onSubmit(data) {
     this.props.request(data)
-    console.log(this.props)
     console.log('submitted', data) // eslint-disable-line no-console
   }
 
